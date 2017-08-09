@@ -11,6 +11,6 @@ public class ApplicationTest {
     @Test
     public void test() {
         val app = new Application();
-        assertEquals("Hello", app.getText());
+        assertEquals("Hello", app.greet());
     }
 }

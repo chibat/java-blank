@@ -1,15 +1,17 @@
 package app;
 
-import lombok.Getter;
+import java.io.IOException;
+
 import lombok.val;
 
-@Getter
 public class Application {
 
-    private final String text = "Hello";
+    public String greet() {
+        return "Hello";
+    }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         val app = new Application();
-        System.out.println(app.getText());
+        System.out.println(app.greet());
     }
 }
