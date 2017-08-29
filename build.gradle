@@ -15,6 +15,7 @@ apply plugin: 'com.gorylenko.gradle-git-properties'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+tasks.withType(AbstractCompile) each { it.options.encoding = 'UTF-8' }
 
 repositories {
     mavenCentral()
