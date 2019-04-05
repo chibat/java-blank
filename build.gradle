@@ -22,9 +22,10 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.projectlombok:lombok:1.16.16'
+    compileOnly 'org.projectlombok:lombok:1.18.6'
     testCompile 'junit:junit:4.12'
-    testCompileOnly 'org.projectlombok:lombok:1.16.16'
+    testCompileOnly 'org.projectlombok:lombok:1.18.6'
+    annotationProcessor 'org.projectlombok:lombok:1.18.6'
 }
 
 mainClassName = "app.Application"
